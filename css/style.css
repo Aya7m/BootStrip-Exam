@@ -1,0 +1,378 @@
+/* START GENERAL STYLE */
+:root{
+    --main-color:#343434;
+}
+.main-color{
+    color: #343434;
+}
+.second-color{
+    color: #999999;
+}
+.therd-color{
+    color: #748182;
+}
+h1,h2,h3,h4,h5,h6, .logo{
+    font-family: 'Montserrat', sans-serif; 
+
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+a{
+    color: inherit;
+    text-decoration: none;
+
+}
+.main-title{
+    font-size: 40px;
+    color: #343434;
+    font-weight: 900;
+}
+.bg-title{
+    background-image: url(../imgs/dots.png);
+    
+    width: 500px;
+    height: 100px;
+    background-position: center;
+    margin: auto;
+}
+/* END GENERAL STYLE */
+/* START NAV BAR */
+.navbar-nav .nav-link{
+    color: #fff;
+}
+    
+
+/* ***********8END NAV BAR############ */
+
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+    color: #fff;
+}
+
+.navbar-brand{
+    font-size: 24px;
+    font-weight: 700;
+}
+
+/* **********SRART HEADER ****************/
+header{
+    background:linear-gradient(rgba(0,0,0,0.7)0% 100%), url("../imgs/bg.jpg");
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+}
+header .home-contact ul li a i{
+    width:40px ;
+    height: 40px;
+    border: none;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#000A10;
+    
+}
+header h5{
+    font-size: 50px;
+    font-weight: 800;
+    
+}
+#home h1{
+    font-size: 60px;
+    position: relative;
+}
+#home .me{
+    font-weight: 100;
+}
+#home ul{
+    margin: auto;
+}
+
+
+/* ====================START ABOUT SECTION ================== */
+ .about-img{
+ 
+  background-image: url(../imgs/dots.png);
+  height: 350px;
+  width: 390px;
+  margin-top: 120px;
+
+position: relative;
+
+}
+.about-img img{
+   
+ width: 600px;
+   position: absolute;
+  bottom: 30px;
+  left: 30px;
+
+  
+}
+.skill .progress{
+    box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.4) inset;
+
+}
+
+.btn-white {
+    --bs-btn-color: #1C1C1C;
+    --bs-btn-bg:transparent;
+    --bs-btn-border-color: #1C1C1C;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #1C1C1C;
+    --bs-btn-hover-border-color: #1C1C1C;
+   
+}
+.btn-black{
+    --bs-btn-color:#1C1C1C ;
+    --bs-btn-bg:transparent;
+    --bs-btn-border-color: #1C1C1C;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg:#1C1C1C ;
+    --bs-btn-hover-border-color: #1C1C1C;
+   
+}
+#about h3{
+    font-weight: 500;
+    font-size: 30px;
+
+}
+/* ==========================END ANOUT SECTION========================= */
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+    color: #fff;
+}
+ .navbar-brand{
+    color: #fff;
+}
+.head-top{
+    background-color: transparent;
+    color: #fff;
+}
+
+
+
+/* =============START SERVICE SECTION============= */
+
+
+#service .icon {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    
+}
+#service h6{
+    font-size: 18px;
+    font-weight: 800;
+    color: var(--main-color);
+}
+#service .icon{
+    background-color: #F7F7F7;
+    transition: all 1s;
+}
+#service .contant:hover .icon{
+    background-color: #343434;
+    color: #fff;
+}
+/* =============END SERVICE SECTION============= */
+
+/* =======START PORTFOLIO========= */
+#work .nav-link{
+color: #343434;
+font-size: 16px;
+font-weight: 700;
+border: none;
+}
+#work .nav-tabs{
+    border: none;
+}
+#work .icon i{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid black;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+   
+
+}
+#work figure{
+    position: relative;
+    overflow: hidden;
+   
+    
+}
+#work figcaption {
+ 
+    position: absolute;
+    left: 10px;
+    top: 0px;
+    bottom: 10px;
+    right: 10px;
+    transform: translateY(200%);
+    transition: 0.4s all ease-in-out;
+  
+}
+#work figure:hover  figcaption{
+    transform: translateY(0%);
+
+}
+#work .icon{
+    background-color: #fff;
+    color: #000A10;
+}
+#work figure:hover i{
+    background-color: #343434;
+    color: #fff;
+}
+#work .icon:hover i{
+
+background-color: #fff;
+    color: #000A10;
+}
+
+
+/* ==============START TESTMONIAL SECTION============== */
+#testmonial img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+}
+#testmonial button{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #8a8a8a;
+}
+.motion h2{
+    font-size: 40px;
+    font-weight:900;
+}
+
+.motion h2::after{
+    content: "";
+    animation: animation 1s ;
+    
+}
+@keyframes animation {
+    0%{
+        content: "230";
+      
+
+    }
+    10%{
+        content: "330";
+    }
+    20%{
+        content: "390";
+    }
+    40%{
+        content: "450";
+    }
+
+    60%{
+        content: "680";
+    }
+    70%{
+        content: "790";
+    }
+    80%{
+        content: "800";
+    }
+
+    90%{
+        content: "830";
+    }
+    100%{
+        content: "850";
+    }
+    
+}
+/* @@@@@@@@@@@@@@@END TESTMONIAL SECTION @@@@@@@@@@@@@@@@@@*/
+/* #######START TEAM SECTION################ */
+#team .card:hover img{
+    transform: scale(105%);
+ 
+
+
+}
+#team  img{
+    transition: 0.5s all ;
+
+ 
+    
+}
+#team .card{
+    overflow: hidden;
+    transition: 1s all;
+ 
+}
+#team .card .caption i{
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    border: 1px solid black;
+    background-color: #343434;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#team .card .caption{
+    top: 10px;
+    left: 130%;
+    right: 10px;
+    bottom: 100px;
+   opacity: 90%;
+    padding-top: 150px;
+    
+    
+    transform: rotateY(0deg);
+    
+    transition: 0.5s all;
+}
+#team .card:hover .caption{
+    left: 10px;
+    transform: rotateY(360deg);
+
+}
+#team .card  i:hover {
+background-color: #fff;
+color: #343434;
+}
+
+/* #######END TEAM SECTION################ */
+/* *****************START CONTACT SECTION**************** */
+#contact .icon{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border: 1px solid black;
+    background-color:#F4F4F4 ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    transition: 0.5s all;
+    
+}
+#contact .icon:hover{
+    background-color: #343434;
+    color: #fff;
+}
+#contact button{
+    width: 140px;
+    height: 40px;
+    
+}
+.btn-black {
+    --bs-btn-color: #fff;
+    --bs-btn-bg:#1C1C1C ;
+    --bs-btn-border-color: #1C1C1C;
+    --bs-btn-hover-color: #1C1C1C;
+    --bs-btn-hover-bg: transparent;
+    --bs-btn-hover-border-color: #1C1C1C;
+}
+/* *****************START CONTACT SECTION**************** */
